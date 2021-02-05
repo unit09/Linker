@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Linker",
+    "description": "Send Link of Tabs to Server",
+    "version": "1.0.0",
+  
+    "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "js": ["jquery-3.5.1.min.js"],
+        "matches": ["<all_urls>"]
+    }],
+    "permissions": [
+      "activeTab",
+      "tabs",
+      "<all_urls>"
+    ]
+  }
